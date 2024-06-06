@@ -16,9 +16,6 @@ read -p "输入节点身份码: " id
 container_count=5
 start_rpc_port=30000
 storage_gb=64
-
-read -p "设置节点存储路径（直接回车默认路径 titan_storage_$i）: " custom_storage_path
-
 apt update
 
 # 检查 Docker 是否已安装
