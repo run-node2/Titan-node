@@ -7,14 +7,17 @@ if [ "$(id -u)" != "0" ]; then
     exit 1
 fi
 
+echo "============================自用脚本============================="
+echo "需要测试网节点部署托管 技术指导 部署领水质押脚本 请联系Telegram :https://t.me/linzeusasa"
+echo "===================Titan最新测试网节点一键部署===================="
 # 读取加载身份码信息
 read -p "输入节点身份码: " id
 
-container_count = 5
-start_rpc_port = 30000
-storage_gb = 64
+$container_count = 5
+$start_rpc_port = 30000
+$storage_gb = 64
 
-read -p "请输入节点存储数据的宿主机路径（直接回车默认路径 titan_storage_$i）: " custom_storage_path
+read -p "设置节点存储路径（直接回车默认路径 titan_storage_$i）: " custom_storage_path
 
 apt update
 
